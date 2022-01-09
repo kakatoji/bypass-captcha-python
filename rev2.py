@@ -1,12 +1,5 @@
 import requests,time,json,sys,os
 
-def countdown(self,second):
-        while second:
-            mins,secs = divmod(second,60)
-            timer = "  \033[1;33m✒ \033[1;37mWaiting\033[1;37m \033[37m⟨\033[0;36m{:02d}:{:02d}\033[1;37m⟩ ".format(mins,secs)
-            print(timer,end="\r")
-            sleep(1)
-            second -= 1
 def setCaptcha(key,web,sitekey):
     url='https://api.anycaptcha.com/';
     header={'Host': 'api.anycaptcha.com','Content-Type': 'application/json'}
